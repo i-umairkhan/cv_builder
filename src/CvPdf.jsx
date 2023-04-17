@@ -110,8 +110,8 @@ const CV = ({
             education.map((edu) => (
               <div style={styles.section}>
                 <Text style={styles.miniHeadings}>{edu.institution}</Text>
-                <Text style={{ fontSize: "10px" }}>{edu.degree}</Text>
-                <Text style={{ fontSize: "10px" }}>{edu.grades}</Text>
+                <Text style={styles.miniHeadings}>{edu.degree}</Text>
+                <Text style={styles.miniHeadings}>{edu.grades}</Text>
               </div>
             ))}
         </View>
@@ -127,12 +127,10 @@ const CV = ({
             experiance.map((exp) => (
               <div style={styles.section}>
                 <Text style={styles.miniHeadings}>{exp.company}</Text>
-                <Text style={{ fontSize: "10px" }}>
+                <Text style={styles.miniHeadings}>
                   {exp.jobTitle} - {exp.duaration}
                 </Text>
-                <Text style={{ color: "gray", fontSize: "12px" }}>
-                  {exp.responsiblites}
-                </Text>
+                <Text style={styles.miniHeadings}>{exp.responsiblites}</Text>
               </div>
             ))}
         </View>
